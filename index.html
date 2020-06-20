@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>种树排行榜</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<script>
+    + function () {
+        remLayout();
+
+        function remLayout() {
+            var w = document.documentElement.clientWidth;
+            w = w > 750 ? 750 : w;
+            w = w <= 320 ? 320 : w;
+            document.documentElement.style.fontSize = w / 7.50 + 'px';
+        }
+
+        window.addEventListener('resize', function () {
+            remLayout();
+        }, false);
+    }();
+</script>
+
+<body>
+    <div class="top_box">
+        <div class="top_bg">
+            <!-- 弹幕 -->
+            <div id="wrapper"></div>
+        </div>
+        <div class="top_bg1">
+            <div class="top_bg1_text">
+                <p>已浇水(g)</p>
+                <p>1251545544454444</p>
+            </div>
+        </div>
+    </div>
+    <div class="dian"></div>
+    <!-- 排行榜 -->
+    <div class="Ranking">
+        <div class="Ranking_top">
+            <div class="active"><span>公司捐赠</span></div>
+            <span>|</span>
+            <div><span>员工捐赠</span></div>
+        </div>
+        <!-- 选项卡内容1 -->
+        <div class="Ranking_main">
+            <div class="Ranking_main1">
+
+                <!-- 列表1 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/jinpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="xiangqing_box_left3">
+                            <div>盛世正和</div>
+                            <div>张格格</div>
+                        </div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表2 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/yinpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="xiangqing_box_left3">
+                            <div>盛世正和</div>
+                            <div>张格格</div>
+                        </div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表3 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/tongpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="xiangqing_box_left3">
+                            <div>盛世正和</div>
+                            <div>张格格</div>
+                        </div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表4 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><span>4</span></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="xiangqing_box_left3">
+                            <div>盛世正和</div>
+                            <div>张格格</div>
+                        </div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表5 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><span>5</span></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="xiangqing_box_left3">
+                            <div>盛世正和</div>
+                            <div>张格格</div>
+                        </div>
+
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+            </div>
+            <div></div>
+            <!-- 选项卡内容2 -->
+            <div class="Ranking_main2" style="display: none;">
+                <!-- 列表1 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/jinpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="neirong2">张格格</div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表2 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/yinpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="neirong2">张格格</div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表3 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><img src="img/tongpai.png" alt=""></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="neirong2">张格格</div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表4 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><span>4</span></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="neirong2">张格格</div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+                <!-- 列表5 -->
+                <div class="xiangqing_box">
+                    <div class="xiangqing_box_left">
+                        <div class="xiangqing_box_left1"><span>5</span></div>
+                        <div class="xiangqing_box_left2"><img src="img/touxiang.png" alt=""></div>
+                        <div class="neirong2">张格格</div>
+                    </div>
+                    <div class="xiangqing_box_right">88.2kg</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        $(function () {
+            $(".Ranking_top div").click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                var index = $(this).index();
+                console.log(index)
+                $(".Ranking_main>div").hide().eq(index).show();
+            })
+        })
+    </script>
+</body>
+
+</html>
